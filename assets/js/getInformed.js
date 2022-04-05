@@ -12,3 +12,28 @@ $.ajax({
 }).then(function (response) {
     console.log(response);
 });
+
+
+var userName = document.getElementById("userName")
+var userEmail = document.getElementById("userEmail")
+var submit = document.getElementById("submitBtn")
+
+submit.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+  userName
+  userEmail 
+  
+    if (userName === "") {
+      displayMessage("error", "Name cannot be blank");
+    } else if (userEmail === "") {
+      displayMessage("error", "Email cannot be blank");
+    } else {
+      displayMessage("success", "Registered successfully");
+  
+      localStorage.setItem("UserName", userName);
+      localStorage.setItem("UserEmail", userEmail);
+    }
+});
+ 
+

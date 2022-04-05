@@ -7,10 +7,9 @@
 }
 
 
-form{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
+form {
+    border: 2px solid black ;
+    border-radius: 5px;
 }
 
 #signUpForm {

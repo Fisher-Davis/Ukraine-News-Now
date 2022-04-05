@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <title>Ukraine News Now - Get Informed</title>
 </head>
 
@@ -27,10 +28,10 @@
               <a class="nav-link" href="#this-week">This week</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#sign-up">Sign Up</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="#about-section">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./getInvolved.html">Get Involved</a>
@@ -47,7 +48,7 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1>The latest news on Ukraine</h1>
-      <p>Bootstrap is the most popular HTML, CSS...</p>
+      <p>Articles and news content from around the world on the situation in Ukraine as it unfolds</p>
     </div>
 </div>
 
@@ -56,7 +57,7 @@
     Today's news
 </h1>
 <!--Begin cards to pull in the news-->
-<div class="cards todays-news">
+<div class="cards todays-news" id="today-section">
 
     <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -65,7 +66,7 @@
           <a href="#" class="btn btn-primary">View article</a>
         </div>
       </div>
-    
+<!--     
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -89,6 +90,22 @@
           <a href="#" class="btn btn-primary">View article</a>
         </div>
       </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div> -->
 
       <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -110,6 +127,7 @@
 </div> 
 <!--Adding a spacer-->
 <div class="spacer"></div>
+<hr>
 
 <!--Begin section for this week's news-->
 <h1 class="header-text" id="this-week">
@@ -166,18 +184,124 @@
           <a href="#" class="btn btn-primary">View article</a>
         </div>
       </div>
+ 
+     <!-- <form>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">View article</a>
+        </div>
+      </div>
 
 
+    </div>
+
+<!--Begin signup form-->
      <form>
          <a></a>
-         <div id="signUpForm">
-         <h3>Sign Up</h3>
+         <div id="sign-up">
+         <h1>Sign Up</h1>
         <label for="Name"><b>First & Last Name:</b></label><br>
         <input type="text" placeholder="First & Last Name Here" id="userName"><br>
         <label for="Email"><b>Email:</b></label><br>
-        <input type="email" placeholder="Email Here" id="userEmail">
+        <input type="email" placeholder="Email Here" id="userEmail"><br>
+                  <input type="submit" id="submitBtn" value="Submit">
+
         </div>
-     </form>
+     </form> -->
   </div>
+  <form>
+    <div class="form-group">
+      <label for="userName">First & Last Name</label>
+      <input type="name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="First & Last Name">
+      <small id="emailHelp"></small>
+    </div>
+    <div class="form-group">
+      <label for="userEmail">Email</label>
+      <input type="email" class="form-control" id="userEmail" placeholder="Email"><br>
+    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+  </form>
 </body>
+     </form>
+
+<!--Begin about section with cards for each of us-->
+     <div id="about-section">
+        <h1>About the project</h1>
+        <p> Lorem ipsum about the project</p>
+        <p>The developer team: </p>
+            <div class="cards">
+                
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Colin Brindle</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Sarah Gilbreath</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Brandon Snyder</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Fisher Davis</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+     </div>
+
+    <script src="./assets/js/getInformed.js"></script>
+    </body>
 </html>

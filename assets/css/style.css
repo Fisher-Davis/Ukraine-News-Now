@@ -1,8 +1,15 @@
+:root{
+    --ukraineBlue: #005bbb;
+    --ukraineYellow: #ffd500;
+    --lightBlueBg: #e2f0ff;
+    --lightYellowBg: #fff6c7;
+    --textColor: #000000;
+}
 
-form{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
+
+form {
+    border: 2px solid black ;
+    border-radius: 5px;
 }
 
 #signUpForm {
@@ -51,3 +58,7 @@ form{
 }
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
+/* .carousel{
+    background-color: grey;
+    height: 200px; 
+}  */

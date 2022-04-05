@@ -1,0 +1,17 @@
+
+form{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#signUpForm {
+   margin-bottom: 10px;
+}
+/* *{
+    background-color: palegoldenrod;
+} */
+
+.card{
+    display: inline-block; 
+}

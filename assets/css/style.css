@@ -1,3 +1,11 @@
+:root{
+    --ukraineBlue: #005bbb;
+    --ukraineYellow: #ffd500;
+    --lightBlueBg: #e2f0ff;
+    --lightYellowBg: #fff6c7;
+    --textColor: #000000;
+}
+
 
 form {
     border: 2px solid black ;
@@ -13,4 +21,10 @@ form {
 
 .card{
     display: inline-block; 
+   margin: 4px; 
 }
+
+/* .carousel{
+    background-color: grey;
+    height: 200px; 
+}  */

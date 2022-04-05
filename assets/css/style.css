@@ -22,4 +22,10 @@ form{
 
 .card{
     display: inline-block; 
+   margin: 4px; 
 }
+
+/* .carousel{
+    background-color: grey;
+    height: 200px; 
+}  */

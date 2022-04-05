@@ -1,12 +1,14 @@
 console.log("beep boop link established 🤖️");
 
+var currentDate = moment().format("YYYY-MM-DD");
+
 var apiKey = "5dff9d1b5af740dab33ec03db22e27f7";
 
-var newsURL = "https://newsapi.org/v2/top-headlines?q=ukraine&language=en&apiKey=";
+var newsURL = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to=&"+currentDate+"language=en&apiKey=";
 
 var todaySection = $("#today-section");
 
-var currentDate = moment().format("YYYY-MM-DD");
+
 console.log(currentDate);
 
 console.log(newsURL+apiKey);

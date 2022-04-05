@@ -21,8 +21,42 @@ form {
 
 .card{
     display: inline-block; 
-   margin: 4px; 
 }
+/* =============landing page css =============== */
+#landingHeader{
+    font-family: 'Merriweather', serif;
+    font-stretch: expanded;
+    height: 30%;
+    top: 35%;
+    width:40%;
+    right:30%;
+    position: fixed;
+    z-index: 4;
+    font-size: 150px;  
+}
+#landingHeader h1{
+    color: rgb(51, 29, 194) ;
+    font-size: 70%;
+}
+#landingHeader h2{
+    color: rgb(189, 148, 34) ;
+    font-size: 45%;
+}
+#leftimg{
+    width: 60%; 
+}
+#rightimg{
+    width: 60%; 
+}
+#left-subtitle{
+    font-family: 'Merriweather', serif;
+    color: rgb(169, 199, 39);
+}
+#right-subtitle{
+    font-family: 'Merriweather', serif;
+    color: rgb(82, 47, 176);
+}
+/*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
 /* .carousel{
     background-color: grey;

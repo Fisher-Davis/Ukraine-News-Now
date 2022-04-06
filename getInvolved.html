@@ -152,19 +152,25 @@
 
   </div>
   <!--Begin sign up-->
-  <form>
-    <a></a>
-    <div id="sign-up">
+  <form id="signUp">
     <h1>Sign Up</h1>
-   <label for="Name"><b>First & Last Name:</b></label><br>
-   <input type="text" placeholder="First & Last Name Here" id="userName"><br>
-   <label for="Email"><b>Email:</b></label><br>
-   <input type="email" placeholder="Email Here" id="userEmail">
-   </div>
-</form>
+    <div class="form-group">
+      <label for="userName">First & Last Name</label>
+      <input type="name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="First & Last Name">
+      <small id="emailHelp"></small>
+    </div>
+    <div class="form-group">
+      <label for="userEmail">Email</label>
+      <input type="email" class="form-control" id="userEmail" placeholder="Email"><br>
+    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  
+
   <!--Begin about-->
   <div id="about-section">
-    <h1>About the project</h1>
+    <br><h1>About the project</h1>
     <p> Lorem ipsum about the project</p>
     <p>The developer team: </p>
         <div class="cards">
@@ -198,5 +204,6 @@
               </div>
         </div>
     </div>
+    <script src="./assets/js/getInvolved.js"></script>
 </body>
 </html>

@@ -29,26 +29,26 @@ $.ajax({
 
 todaySection.append("Test");
 
-var userName = document.getElementById("userName");
-var userEmail = document.getElementById("userEmail");
+
 var submit = document.getElementById("submitBtn");
 
+
 submit.addEventListener("click", function(event) {
-    event.preventDefault();
+  event.preventDefault
+  var userName = document.getElementById("userName").value
+  var userEmail = document.getElementById("userEmail").value
+   localStorage.setItem("user name",userName)
+   localStorage.setItem("user email",userEmail)
   
-  userName
-  userEmail 
+    // if (userName === "") {
+    //   displayMessage("error", "Name cannot be blank");
+    // } else if (userEmail === "") {
+    //   displayMessage("error", "Email cannot be blank");
+    // } else {
+    //   displayMessage("success", "Registered successfully");
   
-    if (userName === "") {
-      displayMessage("error", "Name cannot be blank");
-    } else if (userEmail === "") {
-      displayMessage("error", "Email cannot be blank");
-    } else {
-      displayMessage("success", "Registered successfully");
-  
-      localStorage.setItem("UserName", userName);
-      localStorage.setItem("UserEmail", userEmail);
-    }
+
+    // }
 });
  
 

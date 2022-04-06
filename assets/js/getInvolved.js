@@ -37,4 +37,4 @@ submit.addEventListener("click", function(e) {
   var userEmail = document.getElementById("userEmail").value
    localStorage.setItem("user name",userName)
    localStorage.setItem("user email",userEmail)
-
+});

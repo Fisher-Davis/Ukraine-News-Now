@@ -12,13 +12,16 @@ body {
 
 
 #signUp {
+    width: 50%;
     border: 2px solid black ;
     border-radius: 5px;
     padding-left: 8%;
-
+    margin: 20px auto;
+    
 }
 
 #signUpForm {
+    
    margin-bottom: 10px;
 }
 /* *{
@@ -159,4 +162,15 @@ body {
     width: 100%;
     height: 10vw;
     object-fit: cover;
+}
+
+/* Added CSS Brandon card section  & Form section*/
+.card-body{
+    text-align: center;
+}
+.btn{
+   justify-content: end; 
+}
+.card{
+    height: 300px;
 }

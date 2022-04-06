@@ -38,3 +38,4 @@ submit.addEventListener("click", function(e) {
    localStorage.setItem("user name",userName)
    localStorage.setItem("user email",userEmail)
 });
+

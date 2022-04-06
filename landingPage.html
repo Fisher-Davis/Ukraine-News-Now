@@ -5,35 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ukraine News Now</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div class="d-md-flex h-100 align-items-center">
-
-        <!-- First Half -->
-        <div class="col-md-6 bg-primary ">
-            <div class="d-md-flex align-items-center text-center justify-content-center">
+    <!---------------------------  header---------------------- -->
+    <div id="landingHeader" class="">
+        <h1 class="">UKRAINE</h1>
+        <h2 class="">NEWS NOW</h2>
+    </div>
+<!-----------------header end---------------------- --> 
+      <div class="height">   
+        <div class="d-md-flex align-items-center">
+<!----------------- Left Half -->
+            <div class="left ">
                 <div class="">
-                    <img class="" src="./assets/images/newspic.PNG" alt="">
-                    <h1>GET INFORMED</h1>
+                    <div class="left-block">
+                        <img id="leftimg" class=" m-5 border rounded" src="./assets/images/newspic.PNG" alt="">
+                        <h1 id="left-subtitle" class="subtitle"><a href="./getInformed.html">GET INFORMED</a></h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Second Half -->
-        <div class="col-md-6 bg-warning h-100 loginarea">
-            <div class="d-md-flex align-items-center h-100 p-5 justify-content-center">
-                <img src="" alt="">
-                <h1>GET INVOLVED</h1>
+<!------------- Right Half ----------------->
+            <div class="right">
+                <div class="">
+                    <div class="right-block">
+                        <img id="rightimg" class=" m-5 border rounded" src="./assets/images/newspic.PNG" alt="">
+                            <h1  id="right-subtitle" class="subtitle "><a href="./getInvolved.html">GET INVOLVED</a></h1>
+                    </div>
+                </div>
             </div>
-        </div>
-            
+         </div>
     </div>
-
 
 
     <script src="./assets/js/landingPage.js"></script>

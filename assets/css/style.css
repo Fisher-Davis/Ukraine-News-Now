@@ -107,7 +107,7 @@ body {
         align-items: center;
     }
     #landingHeader{
-        z-index: ;
+        /* z-index: ; */
         display:block;
         width:auto;
         height: auto;
@@ -138,7 +138,16 @@ body {
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
 
-/* .carousel{
-    background-color: grey;
-    height: 200px; 
-}  */
+/*===========vvvvvvv Get Involved page styling vvvv============*/
+
+.jumbotron-involved{
+    background-color: var(--lightYellowBg); 
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.jumbotron-fluid{
+    background-image: url("https://cdn.pixabay.com/photo/2022/03/01/07/34/ukraine-7040762_1280.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}

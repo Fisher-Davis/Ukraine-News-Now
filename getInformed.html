@@ -50,119 +50,40 @@
 
   <!--SECTION FOR TODAY'S NEWS-->
   <div class="container-fluid">
-    <h1 class="header-text m-5" id="todays-news">
-        Today's news
+    <h1 class="header-text m-5 border-muted border-bottom">
+        Today's news: <span id="date-field"></span>
     </h1>
-  <!--Begin cards to pull in the news-->
-
-    <div class="row m-5">
-      <div class="card-deck" id="today-section">
-      <!-- <div class="col-12 d-flex flex-row" id="today-section"> -->
-    </div>
+  <!--Begin cards to pull in today's news-->
+    <div class="row mx-5" id="today-section"></div>
   </div>
 
-
-  <!-- <div class="cards todays-news" id="today-section">
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-  </div>  -->
-  <!--Adding a spacer-->
   <div class="spacer"></div>
   <hr>
 
-  <!--Begin section for this week's news-->
-  <h1 class="header-text" id="this-week">
-      This week's news
-  </h1>
-
-<!--Begin cards to pull in the news-->
-  <div class="cards todays-news">
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-    
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
+  <!-- SECTION FOR LAST WEEK'S NEWS -->
+  <div class="container-fluid">
+    <h1 class="header-text m-5 border-muted border-bottom" id="last-week">
+      Last week's news: <span id="last-week"></span>
+    </h1>
+    <!-- Begin cards to pull in last week's news -->
+  </div>
  
 <!--Begin sign-up section-->
-<div id="sign-up">
-  <form id="signUp">
-    <h1>Sign Up</h1>
-    <div class="form-group">
-      <label for="userName">First & Last Name</label>
-      <input type="name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="First & Last Name">
-      <small id="emailHelp"></small>
-    </div>
-    <div class="form-group">
-      <label for="userEmail">Email</label>
-      <input type="email" class="form-control" id="userEmail" placeholder="Email"><br>
-    <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
-
+  <div id="sign-up">
+    <form id="signUp">
+      <h1>Sign Up</h1>
+      <div class="form-group">
+        <label for="userName">First & Last Name</label>
+        <input type="name" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="First & Last Name">
+        <small id="emailHelp"></small>
+      </div>
+      <div class="form-group">
+        <label for="userEmail">Email</label>
+        <input type="email" class="form-control" id="userEmail" placeholder="Email"><br>
+      <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
 <!--Begin about section with cards for each of us-->
   <div id="about-section" class="about-section">
     <h1>About the project</h1>

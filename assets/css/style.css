@@ -10,6 +10,8 @@
 #signUp {
     border: 2px solid black ;
     border-radius: 5px;
+    padding-left: 8%;
+
 }
 
 #signUpForm {

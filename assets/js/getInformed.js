@@ -46,8 +46,7 @@ function getNewsToday(){
           cardBody.append(cardURL);
           card.append(cardImg);
           card.append(cardBody);
-          cardContainer.append(card)
-y-
+          cardContainer.append(card);
           todaySection.append(cardContainer);
       }
   });

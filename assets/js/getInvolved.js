@@ -26,7 +26,6 @@ fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=1a7b6039&ap
         groupOfCards.children[i].children[0].children[0].textContent=data[i].charityName
         groupOfCards.children[i].children[0].children[1].textContent=data[i].tagLine
         groupOfCards.children[i].children[0].children[2].setAttribute('href',data[i].websiteURL)
-    
     }
     
     

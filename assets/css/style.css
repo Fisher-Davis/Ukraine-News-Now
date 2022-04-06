@@ -65,28 +65,28 @@ body {
 
 #leftimg{
     width: 60%;
-    margin-top: 500px;
+    margin-top: 350px;
 }
 
 #rightimg{
     width: 60%;
-    margin-top: 500px; 
+   
 
 }
 .subtitle{
-    margin: 10%;    
+    margin:0 10%;    
 }
 .left-block{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30% ;
+    margin-top: 25% ;
 }
 .right-block{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 #left-subtitle a{
     font-family: 'Merriweather', serif;

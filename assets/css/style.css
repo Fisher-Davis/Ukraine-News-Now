@@ -67,28 +67,28 @@ body {
 
 #leftimg{
     width: 60%;
-    margin-top: 500px;
+    margin-top: 350px;
 }
 
 #rightimg{
     width: 60%;
-    margin-top: 500px; 
+   
 
 }
 .subtitle{
-    margin: 10%;    
+    margin:0 10%;    
 }
 .left-block{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30% ;
+    margin-top: 25% ;
 }
 .right-block{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 #left-subtitle a{
     font-family: 'Merriweather', serif;
@@ -109,7 +109,7 @@ body {
         align-items: center;
     }
     #landingHeader{
-        z-index: ;
+        /* z-index: ; */
         display:block;
         width:auto;
         height: auto;
@@ -140,7 +140,23 @@ body {
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
 
-/* .carousel{
-    background-color: grey;
-    height: 200px; 
-}  */
+/*===========vvvvvvv Get Involved page styling vvvv============*/
+
+.jumbotron-involved{
+    background-color: var(--lightYellowBg); 
+    border-radius: 25px;
+    padding: 10px; 
+}
+
+.jumbotron-fluid{
+    background-image: url("https://cdn.pixabay.com/photo/2022/03/01/07/34/ukraine-7040762_1280.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CSS FOR NEWS CARD IMAGES */
+.card-img-top {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}

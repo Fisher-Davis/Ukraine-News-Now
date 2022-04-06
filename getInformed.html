@@ -37,27 +37,32 @@
                 <a class="nav-link" href="./getInvolved.html">Get Involved</a>
             </li>
           </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
       </nav>
 
 <!--Jumbotron-->
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1>The latest news on Ukraine</h1>
-      <p>Articles and news content from around the world on the situation in Ukraine as it unfolds</p>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron-involved">
+        <h1>The latest news on Ukraine</h1>
+        <p>Articles and news content from around the world on the situation in Ukraine as it unfolds</p>
+        </div>
     </div>
-</div>
 
-<!--Begin section for today's news-->
-<h1 class="header-text" id="todays-news">
-    Today's news
-</h1>
-<!--Begin cards to pull in the news-->
-<div class="cards todays-news" id="today-section">
+  <!--SECTION FOR TODAY'S NEWS-->
+  <div class="container-fluid">
+    <h1 class="header-text m-5" id="todays-news">
+        Today's news
+    </h1>
+  <!--Begin cards to pull in the news-->
+
+    <div class="row m-5">
+      <div class="card-deck" id="today-section">
+      <!-- <div class="col-12 d-flex flex-row" id="today-section"> -->
+    </div>
+  </div>
+
+
+  <!-- <div class="cards todays-news" id="today-section">
 
     <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -66,7 +71,6 @@
           <a href="#" class="btn btn-primary">View article</a>
         </div>
       </div>
-<!--     
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -82,60 +86,18 @@
           <a href="#" class="btn btn-primary">View article</a>
         </div>
       </div>
+  </div>  -->
+  <!--Adding a spacer-->
+  <div class="spacer"></div>
+  <hr>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div> -->
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">View article</a>
-        </div>
-      </div>
-
-
-</div> 
-<!--Adding a spacer-->
-<div class="spacer"></div>
-<hr>
-
-<!--Begin section for this week's news-->
-<h1 class="header-text" id="this-week">
-    This week's news
-</h1>
+  <!--Begin section for this week's news-->
+  <h1 class="header-text" id="this-week">
+      This week's news
+  </h1>
 
 <!--Begin cards to pull in the news-->
-<div class="cards todays-news">
+  <div class="cards todays-news">
 
     <div class="card" style="width: 18rem;">
         <div class="card-body">
@@ -185,18 +147,8 @@
         </div>
       </div>
  
-  
-  
-
-       
-    
- 
-        
-       
-        
-
-    
-  
+<!--Begin sign-up section-->
+<div id="sign-up">
   <form id="signUp">
     <h1>Sign Up</h1>
     <div class="form-group">
@@ -211,49 +163,42 @@
     </div>
   </form>
 
-
-
 <!--Begin about section with cards for each of us-->
-     <div id="about-section">
-        <h1>About the project</h1>
-        <p> Lorem ipsum about the project</p>
-        <p>The developer team: </p>
-            <div class="cards">
-                
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Colin Brindle</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+  <div id="about-section">
+    <h1>About the project</h1>
+    <p> Lorem ipsum about the project</p>
+    <p>The developer team: </p>
+    <div class="cards">
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Colin Brindle</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
 
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Sarah Gilbreath</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Sarah Gilbreath</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
 
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Brandon Snyder</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Brandon Snyder</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
 
-                  <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Fisher Davis</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-            </div>
-     </div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Fisher Davis</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+    </div>
+  </div>
 
-     <script src="./assets/js/getInformed.js"></script>
-
-
-    <script src="./assets/js/getInformed.js"></script>
-
-    </body>
+  <script src="./assets/js/getInformed.js"></script>
+</body>
 </html>

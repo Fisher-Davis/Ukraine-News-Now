@@ -14,8 +14,6 @@ fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=1a7b6039&ap
 })
 
 // ====== End Charity API
-
-
 var submit = document.querySelector("#submitBtn")
 
 

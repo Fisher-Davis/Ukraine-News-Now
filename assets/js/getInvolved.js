@@ -15,7 +15,6 @@ fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=1a7b6039&ap
     
     console.log(groupOfCards.children[0].children[0].children[0])
 
-
     for(var i= 0; i<12; i++){
         // #groupOfCards
         var charityName= data[i].charityName
@@ -27,12 +26,7 @@ fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=1a7b6039&ap
         groupOfCards.children[i].children[0].children[1].textContent=data[i].tagLine
         groupOfCards.children[i].children[0].children[2].setAttribute('href',data[i].websiteURL)
     }
-    
-    
-
 })
-
-
 // ====== End Charity API
 var submit = document.querySelector("#submitBtn")
 
@@ -50,6 +44,5 @@ submit.addEventListener("click", function(e) {
         alert("The First and Last Name must not be left blank.")
    else(userEmail ==="") 
         alert("The Email field must not be left blank. ")    
-  
 
 })      

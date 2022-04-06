@@ -107,7 +107,7 @@ body {
         align-items: center;
     }
     #landingHeader{
-        z-index: ;
+        /* z-index: ; */
         display:block;
         width:auto;
         height: auto;

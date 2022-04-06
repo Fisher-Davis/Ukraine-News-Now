@@ -34,6 +34,7 @@ function getNewsToday(){
           var cardTitle = $("<h5>").addClass("card-title");
           var cardText = $("<p>").addClass("card-text");
 
+          
       }
   });
 }

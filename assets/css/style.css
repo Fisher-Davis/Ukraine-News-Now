@@ -25,6 +25,14 @@ body {
 
 .card{
     display: inline-block; 
+    height: 100%;
+    align-items:center;
+}
+
+/*=============about section styling ===========*/
+.about-section{
+    padding: 20px; 
+    background-color: var(--lightYellowBg);
 }
 
 /* =============landing page css =============== */

@@ -6,8 +6,20 @@
     --textColor: #000000;
 }
 
+.navbar{
+    background-color: var(--lightYellowBg);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: var(--ukraineYellow);
+  }
+
 body {
     position: relative;
+}
+
+.charity-news{
+    background-color: var(--lightYellowBg);
 }
 
 
@@ -15,6 +27,7 @@ body {
     border: 2px solid black ;
     border-radius: 5px;
     padding-left: 8%;
+    background-color: var(--ukraineYellow);
 
 }
 
@@ -148,7 +161,7 @@ body {
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
 
-/*===========vvvvvvv Get Involved page styling vvvv============*/
+/*===========vvvvvvv Jumbotron styling vvvv============*/
 
 .jumbotron-involved{
     background-color: var(--lightYellowBg); 
@@ -158,6 +171,7 @@ body {
 
 .jumbotron-fluid{
     background-image: url("https://cdn.pixabay.com/photo/2022/03/01/07/34/ukraine-7040762_1280.png");
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
 }

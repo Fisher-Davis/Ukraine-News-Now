@@ -29,7 +29,7 @@ var lastWeek = moment().format("w")-1;
 var lastWeekDate = moment().day(today).week(lastWeek).format("YYYY-MM-DD");
 
 // API variables
-var apiKey = "5dff9d1b5af740dab33ec03db22e27f7";
+var apiKey = "45b92400aa0e4cc3bf4c734a455f31c6";
 var todayNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to="+currentDate+"&language=en&sortBy=popularity&apiKey=";
 var lastWeekNewsAPI = "https://newsapi.org/v2/everything?q=+ukraine&searchIn=title&from="+lastWeekDate+"&to="+yesterday+"&language=en&sortBy=publishedAt&apiKey=";
 

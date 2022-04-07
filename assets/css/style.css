@@ -100,7 +100,7 @@ body {
 }
 
 /* CSS FOR DATE FIELD */
-#date-field {
+#today-date{
     font-size: smaller;
     font-weight: lighter;
 }
@@ -208,10 +208,9 @@ body {
     #smallLandingHeader h1, h2{
         color: #e2f0ff;
     }
-
-.container{
-    height: 600px;
-}
+    .container{
+        height: 600px;
+    }
     .left{
         height: 0px;
         width: 100vw;
@@ -228,6 +227,7 @@ body {
     .right{
         width: 100vw; 
     }
+}
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
 
 

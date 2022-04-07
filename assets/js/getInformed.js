@@ -60,7 +60,7 @@ function displayLastWeekRange(){
 
 function getNewsToday(){
   $.ajax({
-    url: todayNewsAPI+apiKey,
+    url: "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D2022-04-07%26to%3D2022-04-07%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7",
     method: "GET",
   }).then(function (response) { 
       console.log(response);
@@ -90,7 +90,7 @@ function getNewsToday(){
 
 function getLastWeekNews(){
   $.ajax({
-    url: lastWeekNewsAPI+apiKey,
+    url: "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D2022-03-31%26to%3D2022-04-06%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7",
     method: "GET",
   }).then(function (response) { 
       console.log(response);

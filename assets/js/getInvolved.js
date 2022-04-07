@@ -44,12 +44,15 @@ fetch(`https://api.data.charitynavigator.org/v2/Organizations?app_id=1a7b6039&ap
 var submit = document.querySelector("#submitBtn")
 
 
-submit.addEventListener("click", function(e) {
-  e.preventDefault;
+submit.addEventListener("click", function(event) {
+            event.preventDefault();
   var userName = document.getElementById("userName").value
   var userEmail = document.getElementById("userEmail").value
+  var changeTxt = document.querySelector("#changeTxt").innerText = "Thanks!"
    localStorage.setItem("user name",userName)
    localStorage.setItem("user email",userEmail)
+
+    
 });
 
 // ========== End of Submit Button===========

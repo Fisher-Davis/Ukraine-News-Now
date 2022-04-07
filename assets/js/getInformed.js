@@ -127,9 +127,10 @@ function getLastWeekNews(){
 var submit = document.getElementById("submitBtn");
 
 submit.addEventListener("click", function(event) {
-  event.preventDefault
+  event.preventDefault()
   var userName = document.getElementById("userName").value
   var userEmail = document.getElementById("userEmail").value
+  var changeTxt = document.querySelector("#changeTxt").innerText = "Thanks!"
    localStorage.setItem("user name",userName)
    localStorage.setItem("user email",userEmail)
   

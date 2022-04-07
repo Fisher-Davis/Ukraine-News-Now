@@ -14,21 +14,30 @@ console.log("          /  .'             /  (       .'  /     Ww._     `.  `\"")
 console.log("        /  Y,              `,  `-,=,_{   ;      MMMP`\"\"-,  `-._.-,");
 console.log("fsc     (--, )                `,_ / `) \\\/\"\")      ^\"      `-, -;\"\\:");
 console.log(")         `\"\"\"                    `\"\"\"   `\"'                  `---\"");
+console.log("You're all nutjobs for making this hello???")
 console.log("beep boop link established 🤖️");
 
 // Date variables
 var todaySection = $("#today-section");
 var lastWeekSection = $("#last-week-section")
-var dateStamp = $("#date-field");
+var todayDateStamp = $("#today-date");
+var lastWeekDateStamp = $("lw-date");
 var currentDate = moment().format("YYYY-MM-DD");
+var yesterday = moment().subtract(1,"days").format("YYYY-MM-DD");
 var today = moment(currentDate).format("dddd");
 var lastWeek = moment().format("w")-1;
 var lastWeekDate = moment().day(today).week(lastWeek).format("YYYY-MM-DD");
 
 // API variables
 var apiKey = "5dff9d1b5af740dab33ec03db22e27f7";
-var todayNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to=&"+currentDate+"&language=en&sortBy=popularity&apiKey=";
-var lastWeekNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+lastWeekDate+"&to=&"+currentDate+"&language=en&sortBy=popularity&apiKey=";
+var todayNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to="+currentDate+"&language=en&sortBy=popularity&apiKey=";
+var lastWeekNewsAPI = "https://newsapi.org/v2/everything?q=+ukraine&searchIn=title&from="+lastWeekDate+"&to="+yesterday+"&language=en&sortBy=publishedAt&apiKey=";
+
+var todayNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D"+currentDate+"%26to%3D"+currentDate+"%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
+
+var lastWeekNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D"+lastWeekDate+"%26to%3D"+yesterday+"%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
+
+console.log(lastWeekDateStamp);
 
 console.log(todayNewsAPI+apiKey);
 console.log(lastWeekNewsAPI+apiKey);
@@ -36,6 +45,7 @@ console.log(lastWeekNewsAPI+apiKey);
 getNewsToday();
 getLastWeekNews();
 displayDate();
+displayLastWeekRange();
 
 setInterval(function(){
   displayDate();
@@ -43,13 +53,20 @@ setInterval(function(){
 },10000);
 
 function displayDate(){
-  var dateTime = moment().format("dddd, MMMM Do YYYY, h:mm A");
-  dateStamp.html(dateTime);
+  var todayDateTime = moment().format("dddd, MMMM Do YYYY, h:mm A");
+  todayDateStamp.html(todayDateTime);
+}
+
+function displayLastWeekRange(){
+  var lastWeekDateRange = moment(lastWeekDate).format("dddd, MMMM Do YYYY") + " to " + moment(yesterday).format("dddd, MMMM Do YYYY");
+  console.log("Last week's news: " + lastWeekDateRange);
+  lastWeekDateStamp.append("Last week's news: " + lastWeekDateRange);
 }
 
 function getNewsToday(){
   $.ajax({
-    url: todayNewsAPI+apiKey,
+    url: todayNewsAPIcors,
+    contentType: 'application/json',
     method: "GET",
   }).then(function (response) { 
       console.log(response);
@@ -58,7 +75,7 @@ function getNewsToday(){
           var articleURL = response.articles[i].url;
           var articleImg = response.articles[i].urlToImage;
 
-          var cardContainer = $("<div>").addClass("col-xl-4 col-xs-12 mb-3");
+          var cardContainer = $("<div>").addClass("col-xl-4 col-xs-12 mb-5");
           var card = $("<div>").addClass("card newsCard");
           var cardImg = $("<img>").addClass("card-img-top").attr("src",articleImg);
           var cardBody = $("<div>").addClass("card-body");
@@ -79,16 +96,16 @@ function getNewsToday(){
 
 function getLastWeekNews(){
   $.ajax({
-    url: lastWeekNewsAPI+apiKey,
+    url: lastWeekNewsAPIcors,
     method: "GET",
   }).then(function (response) { 
       console.log(response);
-      for (var i = 0; i < 6; i++) {
+      for (var i = 0; i < 12; i++) {
           var articleTitle = response.articles[i].title;
           var articleURL = response.articles[i].url;
           var articleImg = response.articles[i].urlToImage;
 
-          var cardContainer = $("<div>").addClass("col-xl-4 col-xs-12 mb-3");
+          var cardContainer = $("<div>").addClass("col-xl-3 col-xs-12 mb-3");
           var card = $("<div>").addClass("card newsCard");
           var cardImg = $("<img>").addClass("card-img-top").attr("src",articleImg);
           var cardBody = $("<div>").addClass("card-body");

@@ -127,7 +127,7 @@ body {
 }
 
 /* CSS FOR DATE FIELD */
-#date-field {
+#today-date{
     font-size: smaller;
     font-weight: lighter;
 }
@@ -265,10 +265,8 @@ body {
     #smallLandingHeader h1, h2{
         color: #e2f0ff;
     }
-
     .container{
-    margin: 0;
-    padding: 0;
+        height: 600px;
     }
     .left{
         height: 600px ;
@@ -284,5 +282,15 @@ body {
     .right{
         width: 100vw; 
     }
+}
+/*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
+
+
+/*===========vvvvvvv Jumbotron styling vvvv============*/
+
+.jumbotron-involved{
+    background-color: var(--lightYellowBg); 
+    border-radius: 25px;
+    padding: 10px; 
 }
 /*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */

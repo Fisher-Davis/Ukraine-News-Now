@@ -22,145 +22,55 @@ body {
 .charity-news{
     background-color: var(--lightYellowBg);
 }
-
+#signUpContainer{
+    display: flex;
+    background-color: #005bbb;
+}
 
 #signUp {
+    width: 50%;
     border: 2px solid black ;
     border-radius: 5px;
-    padding-left: 8%;
+  
     background-color: var(--ukraineYellow);
+    margin: 20px auto;
+    
 
 }
-
+#formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #signUpForm {
+    align-self: center;
    margin-bottom: 10px;
+
 }
+
 /* *{
     background-color: palegoldenrod;
 } */
 
 .card{
     display: inline-block; 
-    height: 100%;
+    height: 280px;
     align-items:center;
+    margin: auto;
+
+}
+
+#aboutDiv{
+    display: flex;
+    
 }
 
 /*=============about section styling ===========*/
 .about-section{
     padding: 20px; 
     background-color: var(--lightYellowBg);
-}
-
-/* =============landing page css =============== */
-#landingHeader{
-    position: absolute;
-    font-family: 'Merriweather', serif;
-    font-stretch: expanded;
-    height: 30%;
-    width:40%;
-    text-align: center;
-    top: 10%;
-    right:30%; 
-    z-index: 4;
-    font-size: 150px; 
-}
-#landingHeader h1{
-    color:white;
-    font-size: 70%;
-}
-#landingHeader h2{
-    color:white ;
-    font-size: 45%;
-}
-
-.left, .right{
-    min-height: 100vh;
-    min-height: 100vh;
-}
-.left{
-    background-color: var(--ukraineBlue);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.right{
-    background-color: var(--ukraineYellow);
-}
-
-#leftimg{
-    width: 60%;
-    margin-top: 350px;
-}
-
-#rightimg{
-    width: 60%;
-   
 
 }
-.subtitle{
-    margin:0 10%;    
-}
-.left-block{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 25% ;
-}
-.right-block{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 25%;
-}
-#left-subtitle a{
-    font-family: 'Merriweather', serif;
-    text-decoration: none;
-    color: white;
-        
-}
-#right-subtitle a{
-    font-family: 'Merriweather', serif;
-    text-decoration: none;
-    color: white;
-}
-
-
-@media (max-width: 800px){
-    body{
-        display: flex;
-        align-items: center;
-    }
-    #landingHeader{
-        /* z-index: ; */
-        display:block;
-        width:auto;
-        height: auto;
-        margin: 20px;
-        padding: 20px;
-        height: 150px;
-        text-align: center;
-        font-size:80px;
-        border-radius: 30px;
-        background: var(--ukraineYellow);
-    } 
-    .left-block{
-        margin-top: 50%;
-        align-items: center;
-    } 
-    
-    .right-block{
-        margin-top: 0;
-        align-items: center;
-    }
-    .right{
-        height: 100vh;
-    }
-
-
-
-}
-/*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
-
 
 /*===========vvvvvvv Jumbotron styling vvvv============*/
 
@@ -194,3 +104,131 @@ body {
     font-size: smaller;
     font-weight: lighter;
 }
+/* =============landing page css =============== */
+#landingHeader{
+    position: absolute;
+    font-family: 'Merriweather', serif;
+    font-stretch: expanded;
+    height: 30%;
+    width:40%;
+    text-align: center;
+    top: 10%;
+    right:30%; 
+    z-index: 4;
+    font-size: 150px; 
+}
+#landingHeader h1{
+    
+    color:rgb(255, 255, 255) ;
+    font-size: 50%;
+}
+#landingHeader h2{
+   
+    color:rgb(255, 255, 255) ;
+    font-size: 45%;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+#smallLandingHeader{
+    display: none;
+}
+
+.left, .right{
+    min-height: 100vh;
+    min-width: 50vw;
+    
+}
+.left{
+    background-color: var(--ukraineBlue);
+    display: flex;
+    flex-direction: column;
+}
+.right{
+    background-color: var(--ukraineYellow);
+}
+
+#leftimg{
+    width: 60%;
+    margin-top: 350px;
+}
+
+#rightimg{
+    width: 60%;
+   
+
+}
+.subtitle{
+    margin:0 10%;    
+}
+.left-block{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    margin-top: 25% ;
+}
+.right-block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 25%;
+}
+#left-subtitle a{
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: white;
+        
+}
+#right-subtitle a{
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 800px){
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background-color: #005bbb;
+    }
+    #landingHeader{
+        display: none;
+    } 
+    #smallLandingHeader{
+        display: flex;
+        flex-direction: column;
+        align-self: center; 
+        align-items: center;       
+    }
+    #smallLandingHeader h1, h2{
+        color: #e2f0ff;
+    }
+
+.container{
+    height: 600px;
+}
+    .left{
+        height: 0px;
+        width: 100vw;
+    }
+    .left-block{
+        margin-top: 50%;
+        align-items: center;
+    } 
+    
+    .right-block{
+        margin-top: 0;
+        align-items: center;
+    }
+    .right{
+        width: 100vw; 
+    }
+/*===========^^^^^^^ Landing Page CSS ABOVE ^^^^^^=========== */
+
+
+

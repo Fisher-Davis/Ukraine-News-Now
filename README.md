@@ -26,6 +26,7 @@ In the future, we hope to include the following features in Ukraine News Now:
 ## **Links**
 - **[Deployed site link](https://fisher-davis.github.io/Ukraine-News-Now/)**
 - **[GitHub repository](https://github.com/Fisher-Davis/Ukraine-News-Now)**
+- **[Presentation Link](https://drive.google.com/file/d/12zG1LQO0ji1PyGWOVqZgOkFhW-pQRuBU/view)**
 
 <br/>
 

@@ -1,21 +1,19 @@
 // Checking javascript file is linked properly
-                                               ,w.
-                                             ,YWMMw  ,M  ,
-                        _.---.._   __..---._.'MMMMMw,wMWmW,
-                   _.-""        """           YP"WMMMMMMMMMb,
-                .-' __.'                   .'     MMMMW^WMMMM;
-    _,        .'.-'"; `,       /`     .--""      :MMM[==MWMW^;
- ,mM^"     ,-'.'   /   ;      ;      /   ,       MMMMb_wMW"  @\
-,MM:.    .'.-'   .'     ;     `\    ;     `,     MMMMMMMW `"=./`-,
-WMMm__,-'.'     /      _.\      F"""-+,,   ;_,_.dMMMMMMMM[,_ / `=_}
-"^MP__.-'    ,-' _.--""   `-,   ;       \  ; ;MMMMMMMMMMW^``; __|
-           /   .'            ; ;         )  )`{  \ `"^W^`,   \  :
-          /  .'             /  (       .'  /     Ww._     `.  `"
-         /  Y,              `,  `-,=,_{   ;      MMMP`""-,  `-._.-,
-fsc     (--, )                `,_ / `) \/"")      ^"      `-, -;"\:
-         `"""                    `"""   `"'                  `---"
-
-
+console.log("                                               ,w.");
+console.log("                                             ,YWMMw  ,M  ,");
+console.log("                        _.---.._   __..---._.'MMMMMw,wMWmW,");
+console.log("                   _.-\"\"        \"\"\"           YP\"WMMMMMMMMMb,");
+console.log("                .-' __.'                   .'     MMMMW^WMMMM;");
+console.log("    _,        .'.-'\"\; `,       /`     .--\"\"      :MMM[==MWMW^;");
+console.log(" ,mM^\"     ,-\'.\'   /   ;      ;      /   ,       MMMMb_wMW\"  @");
+console.log(",MM:.    .'.-'   .'     ;     `\    ;     `,     MMMMMMMW `\"=./`-,");
+console.log("WMMm__,-'.'     /      _.\      F\"\"\"-+,,   ;_,_.dMMMMMMMM[,_ / `=_}");
+console.log("^MP__.-'    ,-' _.--\"\"   `-,   ;       \  ; ;MMMMMMMMMMW^``; __|");
+console.log("           /   .'            ; ;         )  )`{  \\ `\"^W^`,   \  :");
+console.log("          /  .'             /  (       .'  /     Ww._     `.  `\"");
+console.log("        /  Y,              `,  `-,=,_{   ;      MMMP`\"\"-,  `-._.-,");
+console.log("fsc     (--, )                `,_ / `) \\\/\"\")      ^\"      `-, -;\"\\:");
+console.log(")         `\"\"\"                    `\"\"\"   `\"'                  `---\"");
 console.log("beep boop link established 🤖️");
 
 // Date variables

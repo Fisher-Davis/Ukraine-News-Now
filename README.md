@@ -23,15 +23,6 @@ In the future, we hope to include the following features in Ukraine News Now:
 
 <br/>
 
-## **Site Screenshots**
-![Site landing page]()
-
-![Site get informed page]()
-
-![Site get involved page]()
-
-<br/>
-
 ## **Links**
 - **[Deployed site link](https://fisher-davis.github.io/Ukraine-News-Now/)**
 - **[GitHub repository](https://github.com/Fisher-Davis/Ukraine-News-Now)**
@@ -55,3 +46,16 @@ In the future, we hope to include the following features in Ukraine News Now:
 - Fisher Davis: [GitHub](https://github.com/fisher-davis)
 - Sarah Gilbreath: [GitHub](https://github.com/thenoiseinspace)
 - Brandon Synder: [GitHub](https://github.com/BrandonSnyder)
+
+<br/>
+
+## **Site Screenshots**
+![Site landing page](/assets/images/landingpage.png)
+
+![Site get informed page 1](/assets/images/getinformed1.png)
+
+![Site get informed page 2](/assets/images/getinformed2.png)
+
+![Site get involved page](/assets/images/charity.png)
+
+![Site sign up section](/assets/images/signup.png)

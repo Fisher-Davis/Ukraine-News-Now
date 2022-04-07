@@ -14,6 +14,7 @@ console.log("          /  .'             /  (       .'  /     Ww._     `.  `\"")
 console.log("        /  Y,              `,  `-,=,_{   ;      MMMP`\"\"-,  `-._.-,");
 console.log("fsc     (--, )                `,_ / `) \\\/\"\")      ^\"      `-, -;\"\\:");
 console.log(")         `\"\"\"                    `\"\"\"   `\"'                  `---\"");
+console.log("You're all nutjobs for making this hello???")
 console.log("beep boop link established 🤖️");
 
 // Date variables
@@ -31,6 +32,10 @@ var lastWeekDate = moment().day(today).week(lastWeek).format("YYYY-MM-DD");
 var apiKey = "5dff9d1b5af740dab33ec03db22e27f7";
 var todayNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to="+currentDate+"&language=en&sortBy=popularity&apiKey=";
 var lastWeekNewsAPI = "https://newsapi.org/v2/everything?q=+ukraine&searchIn=title&from="+lastWeekDate+"&to="+yesterday+"&language=en&sortBy=publishedAt&apiKey=";
+
+var todayNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D"+currentDate+"%26to%3D"+currentDate+"%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
+
+var lastWeekNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D"+lastWeekDate+"%26to%3D"+yesterday+"%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
 
 console.log(lastWeekDateStamp);
 
@@ -60,7 +65,8 @@ function displayLastWeekRange(){
 
 function getNewsToday(){
   $.ajax({
-    url: "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D2022-04-07%26to%3D2022-04-07%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7",
+    url: todayNewsAPIcors,
+    contentType: 'application/json',
     method: "GET",
   }).then(function (response) { 
       console.log(response);
@@ -90,7 +96,7 @@ function getNewsToday(){
 
 function getLastWeekNews(){
   $.ajax({
-    url: "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D2022-03-31%26to%3D2022-04-06%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7",
+    url: lastWeekNewsAPIcors,
     method: "GET",
   }).then(function (response) { 
       console.log(response);

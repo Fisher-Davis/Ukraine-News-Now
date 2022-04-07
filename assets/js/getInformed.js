@@ -33,9 +33,9 @@ var apiKey = "45b92400aa0e4cc3bf4c734a455f31c6";
 var todayNewsAPI = "https://newsapi.org/v2/top-headlines?q=ukraine&from="+currentDate+"&to="+currentDate+"&language=en&sortBy=popularity&apiKey=";
 var lastWeekNewsAPI = "https://newsapi.org/v2/everything?q=+ukraine&searchIn=title&from="+lastWeekDate+"&to="+yesterday+"&language=en&sortBy=publishedAt&apiKey=";
 
-var todayNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D"+currentDate+"%26to%3D"+currentDate+"%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
+var todayNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Ftop-headlines%3Fq%3Dukraine%26from%3D"+currentDate+"%26to%3D"+currentDate+"%26language%3Den%26sortBy%3Dpopularity%26apiKey%3D45b92400aa0e4cc3bf4c734a455f31c6";
 
-var lastWeekNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D"+lastWeekDate+"%26to%3D"+yesterday+"%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D5dff9d1b5af740dab33ec03db22e27f7";
+var lastWeekNewsAPIcors = "https://corsbridge.herokuapp.com/https%3A%2F%2Fnewsapi.org%2Fv2%2Feverything%3Fq%3D%2Bukraine%26searchIn%3Dtitle%26from%3D"+lastWeekDate+"%26to%3D"+yesterday+"%26language%3Den%26sortBy%3DpublishedAt%26apiKey%3D45b92400aa0e4cc3bf4c734a455f31c6";
 
 console.log(lastWeekDateStamp);
 
